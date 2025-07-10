@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#b19efd">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#b19efd">
+    <title>Mae amiba.me</title>
+    <br>
+    </div>
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      function getDocHeight(doc) {
+          doc = doc || document;
+          // stackoverflow.com/questions/1145850/
+          var body = doc.body, html = doc.documentElement;
+          var height = Math.max( body.scrollHeight, body.offsetHeight, 
+              html.clientHeight, html.scrollHeight, html.offsetHeight );
+          return height;
+      }
+      
+      function setIframeHeight(id) {
+          var ifrm = document.getElementById(id);
+          var doc = ifrm.contentDocument? ifrm.contentDocument: 
+              ifrm.contentWindow.document;
+          ifrm.style.visibility = 'hidden';
+          ifrm.style.height = "300px"; // reset to minimal height ...
+          // IE opt. for bing/msn needs a bit added or scrollbar appears
+          ifrm.style.height = getDocHeight( doc ) + 100 + "px";
+          ifrm.style.visibility = 'visible';
+      }
+      
+      document.getElementById('ifrm').onload = function() { // Adjust the Id accordingly
+          setIframeHeight(this.id);
+      }
+      </script>        
+  </head>
+
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+ <!--
+    <a id="profilePicture" href="#popup">
+      <img src="" alt="">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="" target="_blank">
+            <img src="" alt="">
+          </a>
+        </div>
+        <div class="popup-quote">
+          <a href=""></a>
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+  -->
+    <div id="userName">
+      amiba Mae
+    </div>
+    </div>
+    <iframe 
+       src="https://player.kick.com/amiba-me?autoplay=true" 
+       height="720" 
+       width="100%"
+       frameborder="0" 
+       scrolling="no" 
+       allowfullscreen="true"> 
+   </iframe>
+
+    <!-- Twitch Channel Embedded-->
+  <div class="row" align="center">
+  <!-- Add a placeholder for the Twitch embed -->
+   <div id="twitch-embed"></div>
+   <!-- Load the Twitch embed script -->
+   <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+   <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+   <script type="text/javascript">
+     new Twitch.Embed("twitch-embed", {
+       width: "100%",
+       height: "640",
+       channel: "amibamae",
+       autoplay: false
+     });
+   </script>
+        <br>
+        <div id="links">
+      <a class="link"  href="https://discord.gg/vehHPR98h4" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>amiba.me discord
+      </a>
+        <div id="links">
+      <a class="link"  href="https://steamcommunity.com/groups/amibame" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>amiba.me steam group
+      </a>
+        <a class="link"  href="tel:+12508160186" target="_blank">
+        <i class="fab fa-tel">&nbsp;</i>2508160186
+      </a>
+      <a class="link"  href="https://www.youtube.com/@amiba-me" target="_blank">
+        <i class="fab fa-youtube">&nbsp;</i>youtube
+      </a>
+      <a class="link"  href="https://www.twitch.tv/amibamae" target="_blank">
+        <i class="fab fa-twitch">&nbsp;</i>twitch
+      </a>
+      <div id="links">
+      <a class="link" href="https://amiba.me/discord" target="_blank">
+        <i class="fa fa-arrow-right">&nbsp;</i>amiba.me
+      </a>
+      <iframe src="https://discord.com/widget?id=1295908677722705970&theme=dark" width="675" height="300" allowtransparency="false" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+        <br>
+  </body>
+</html>
